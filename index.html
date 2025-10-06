@@ -26,43 +26,67 @@
       <table cellpadding="20">
          <tr>
             <td>
-               <img src="justin_lil_dippy.jpeg" height="250" style="border:2px solid black">
+               <img src="justin_whitehouse.png" height="250" style="border:2px solid black">
             </td>
             <td>
                <font size="5"><strong>Justin Whitehouse</strong></font>
-               <br><br>Email: jwhiteho (at) andrew (dot) cmu (dot) edu
+               <br><br>Email: jwhiteho (at) stanford  (dot) edu
             </td>
          </tr>
       </table>
       <p>
 
-         I am a postdoc at <a href="https://msande.stanford.edu/">Stanford University</a>, where I am fortunate to work with <a href="https://vsyrgkanis.com/">Vasilis Syrgkanis</a> and <a href="https://web.stanford.edu/~rjohari/">Ramesh Johari</a>. In my postdoc, I am mainly working on problems at the intersection of causal inference and machine learning. I am also interested in problems in anytime-valid statistical inference.
-         <br><br>
-
-         I recently graduated from <a href="https://csd.cmu.edu/">Carnegie Mellon University</a>, where I recieved my PhD in computer science. I was advised by <a href="http://stat.cmu.edu/~aramdas/">Aaditya Ramdas</a> and <a href="https://zstevenwu.com/">Steven Wu</a>.
-          <br><br>
-         
-         Before starting my PhD, I was an undergraduate at Columbia University in New York City. There, I majored in mathematics and computer science. I was fortunate enough to be advised by <a href="https://www.thecomputersciencecomedian.com/">Allison Bishop</a> and <a href="http://www.cs.columbia.edu/~suman/">Suman Jana </a>.
+         I am a <a href="https://ai.stanford.edu/postdoctoralfellows/">SAIL postdoctoral fellow</a> at <a href="https://msande.stanford.edu/">Stanford University</a>, 
+         where I am fortunate to work with <a href="https://vsyrgkanis.com/">Vasilis Syrgkanis</a> and <a href="https://web.stanford.edu/~rjohari/">Ramesh Johari</a>. 
+         My research is broadly focused on problems at the intersection of causal inference, machine learning, and optimal decision making. 
+         I am particularly interested in studying how classical estimation strategies for causal inference (doubly-robust/double ML methods) can be applied to
+         modern ML tasks such as model calibration, policy learning/evaluation, and more. I am also interested in developing <q>anytime-valid</q> statistical methods, which focus on providing
+         non-asymptotic confidence intervals under data-dependent stopping conditions. A more detailed outline for some of my interests is provided below.
+      </p>
+      <ul>
+         <li><b>Causal Calibration:</b> Calibrated predictions are known to be more accurate and result in optimal downstream decision making. However, existing calibration algorithms (isotonic calibration, Platt scaling, histogram bining)
+                require fully-observed data, and are thus unapplicable when calibrating models predicting heterogeneous treatment effects. How can we adapt generic calibration algorithms so that they can be used
+                when calibrating estimates of general heterogeneous causal (e.g. conditional average treatment effects, conditional quantile treatment effects)?  </li>
+         <li><b>Policy Learning/Evaluation:</b>  How can one use observational data to learn the maximal reward of any individualized treatment strategy? How can we develop safe treatment policies or policies that abstain for assigning treatments in regions
+                of uncertainty? </li>
+         <li><b>Generative AI Evaluation:</b> How can we develop causal methods to evaluate the quality (e.g. usefulness, relevance) of the outputs of generative AI models in a target population of interest?
+                Further, given that obtaining labeled data from the target population may be costly, how can we adapt these methods to leverage "cheaper" sources of data, such as ML model predictions
+                or observational data from a different population?</li>
+         <li><b>Adaptive Inference for Self-Normalized Statistics:</b> How can we use recent improvements in martingale concentration to develop generic, multivariate concentration inequalities that control
+                growth of stochastic processes that are normalized by proxies for their own variance? How can we adapt these inequalities for use in online learning tasks such as adaptive mean estimation and multi-armed bandit learning?</li>
+      </ul>
+      <p>
+         Before starting as a postdoc at Stanford, I received my PhD in computer science from  <a href="https://csd.cmu.edu/">Carnegie Mellon University</a>. There, I was advised by <a href="http://stat.cmu.edu/~aramdas/">Aaditya Ramdas</a> and <a href="https://zstevenwu.com/">Steven Wu</a>. 
+         The bulk of my theoretical research was focused on developing anytime-valid methods and time-uniform concentration inequalities. I have applied my inequalities to a variety of ML-related/causal inferece-related problems, such as
+         kernelized bandit learning, differentially private learning, and adaptive causal effect estimation in panel data/network interference settings. Prior to my PhD, I was an undergraduate at Columbia University in New York City. There, I majored in mathematics and computer science.
       </p>
       <hr />
       <h3>Publications and Preprints</h3>
       <div align="left">
          <ul>
+            <li><a href="https://arxiv.org/pdf/2507.11780">Inference on Optimal Policy Values and Other Irregular Functionals via Smoothing</a>
+               (with <a class="author-link" href="https://sites.google.com/view/morganeaustern/home">Morgane Austern</a> and <a class="author-link" href="https://vsyrgkanis.com/">Vasilis Syrgkanis</a>).
+               Arxiv Preprint, 2025.
+            </li>
+            <li><a href="https://www.arxiv.org/abs/2509.22957">Doubly-Robust LLM-as-a-Judge: Externally Valid Estimation with Imperfect Personas</a>
+               (with <a class="author-link" href="https://lukeguerdan.com/">Luke Guerdan</a>, <a class="author-link" href="https://kimberlytruong.github.io/">Kimberly Truong</a>, <a class="author-link" href="https://zstevenwu.com/">Steven Wu</a>, and <a class="author-link" href="https://www.thecoalalab.com/kenholstein">Ken Holstein</a>).
+               Arxiv Preprint, 2025.
+            </li>
             <li><a href="https://arxiv.org/abs/2411.11271">Mean Estimation in Banach Spaces Under Infinite Variance and Martingale Dependence</a>
                (with <a class="author-link" href="https://benchugg.com/">Ben Chugg</a>, <a class="author-link" href="https://dmartinezt.github.io/">Diego Martinez Taboada</a>, and <a class="author-link" href="http://stat.cmu.edu/~aramdas/">Aaditya Ramdas</a>).
-               Arxiv Preprint, 2024.
+               In Revision (Major Revision @ Stochastic Processes and Their Applications), 2025.
             </li>
             <li><a href="https://arxiv.org/abs/2406.01933">Orthogonal Causal Calibration</a>
                (with <a class="author-link" href="https://vsyrgkanis.com/">Vasilis Syrgkanis</a>, <a class="author-link" href="https://www.chrisjung.net/">Christopher Jung</a>, <a class="author-link" href="https://bryanwilder.github.io/">Bryan Wilder</a>, and <a class="author-link" href="https://zstevenwu.com/">Steven Wu</a>).
-               Arxiv Preprint, 2024.
+               Extended Abstract @ Conference on Learning Theory (non-archival), 2025.
+            </li>
+            <li><a href="https://arxiv.org/abs/2310.09100">Time-Uniform Self-Normalized Concentration for Vector-Valued Processes</a>
+            (with <a class="author-link" href="http://stat.cmu.edu/~aramdas/">Aaditya Ramdas</a> and <a class="author-link" href="https://zstevenwu.com/">Steven Wu</a>). <br/>
+            Annals of Applied Probability, 2025.
             </li>
             <li><a href="https://arxiv.org/abs/2405.18621">Multi-Armed Bandits with Network Interference</a>
                (with <a class="author-link" href="https://scholar.google.com/citations?user=_tsYRXwAAAAJ&hl=en">Abhineet Agarwal</a>, <a class="author-link" href="https://sites.google.com/view/anishagarwal/home">Anish Agarwal</a>, and <a class="author-link" href="https://lorenzomasoero.com/">Lorenzo Masoero</a>).
                Neurips, 2024.
-            </li>
-           <li><a href="https://arxiv.org/abs/2310.09100">Time-Uniform Self-Normalized Concentration for Vector-Valued Processes</a>
-            (with <a class="author-link" href="http://stat.cmu.edu/~aramdas/">Aaditya Ramdas</a> and <a class="author-link" href="https://zstevenwu.com/">Steven Wu</a>). <br/>
-            In Submission.
             </li>
            <li><a href="https://arxiv.org/abs/2307.07539">On the Sublinear Regret of GP-UCB</a>
             (with <a class="author-link" href="http://stat.cmu.edu/~aramdas/">Aaditya Ramdas</a> and <a class="author-link" href="https://zstevenwu.com/">Steven Wu</a>). <br/>
